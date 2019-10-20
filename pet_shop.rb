@@ -62,10 +62,9 @@ def customer_cash (customer_1)
   return customer_1[:cash]
 end
 
-# def remove_customer_cash (customer_1, money)
-#   return customer_1[:money] -= money
-#   # You have to replace Alice's cash
-# end
+def remove_customer_cash (customer_1, money)
+  return customer_1[:cash] -= money
+end
 
 def customer_pet_count (first_customer)
   return first_customer[:pets].count
