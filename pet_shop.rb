@@ -50,14 +50,13 @@ def find_pet_by_name(pet_shop, pet_name)
   return nil
 end
 
-# def remove_pet_by_name
-#
-# end
+def add_pet_to_stock (pet_shop, new_pet)
+  return pet_shop[:pets].push(new_pet)
+end
 
-# def stock_count (pet_shop)
-#   instance_variable[:pets].push()
-#   instance_variable[:pets].count
-# end
+def stock_count (pet_shop)
+  return pet_shop[:pets].count
+end
 
 def customer_cash (customer_1)
   return customer_1[:cash]
